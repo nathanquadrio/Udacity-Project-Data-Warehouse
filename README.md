@@ -49,7 +49,7 @@ Example queries for song play analysis are provided in `sql_queries.py`. Here ar
 
 ## Additional Files
 
-`L3_IaC_RedshiftCuster.py`
+`RedshiftCuster.py`
 	•	Create IAM role, Redshift cluster, and allow TCP connection from outside VPC
 	•	Uncomment cleanup_on_exit to delete resources
 
