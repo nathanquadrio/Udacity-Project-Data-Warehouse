@@ -54,8 +54,8 @@ The pipeline is implemented in the `sql_queries.py` script, which includes funct
 
 ## How to Run the Scripts
 1. Set environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in `dwh.cfg`.
-2. Run `L3_IaC_RedshiftCuster.py` to create IAM role, Redshift cluster, and configure TCP connectivity.
+2. Run `redshiftCuster.py` to create IAM role, Redshift cluster, and configure TCP connectivity.
 3. Complete `dwh.cfg` with outputs from step 2, DWH ENDPOINT and IAM_ROLE ARN.
 4. Run `create_tables.py` to drop and recreate tables.
 5. Run ETL pipeline `etl.py`.
-6. Uncomment cleanup_on_exit and re-run `L3_IaC_RedshiftCuster.py` to delete IAM role and Redshift cluster.
+6. Uncomment cleanup_on_exit and re-run `redshiftCuster.py` to delete IAM role and Redshift cluster.
