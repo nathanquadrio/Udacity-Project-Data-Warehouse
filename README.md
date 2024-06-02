@@ -31,21 +31,8 @@ The ETL pipeline involves the following steps:
 2. **Transform**: Process the data in the staging tables to match the star schema.
 3. **Load**: Insert the transformed data into the fact and dimension tables.
 
-The pipeline is implemented in the `etl.py` script, which includes functions to load data into staging tables and insert data into the final tables.
+The pipeline is implemented in the `sql_queries.py` script, which includes functions to load data into staging tables and insert data into the final tables, and executed by the `etl.py` script.
 
-
-## Example Queries
-
-Example queries for song play analysis are provided in `sql_queries.py`. Here are some sample queries and their results:
-
-1. **Most Played Song**
-   ```sql
-   SELECT s.title, COUNT(*) as play_count
-   FROM songplays sp
-   JOIN songs s ON sp.song_id = s.song_id
-   GROUP BY s.title
-   ORDER BY play_count DESC
-   LIMIT 1;
 
 ## Additional Files
 
