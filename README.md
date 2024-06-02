@@ -61,6 +61,9 @@ Example queries for song play analysis are provided in `sql_queries.py`. Here ar
 `dwh.cfg`
 	•	Configuration file
 
+ `dhwFunctions.py`
+	•	Functions for creating the cluster.
+
 
 ## How to Run the Scripts
 1. Set environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in `dwh.cfg`.
