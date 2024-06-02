@@ -36,7 +36,7 @@ The pipeline is implemented in the `sql_queries.py` script, which includes funct
 
 ## Additional Files
 
-`RedshiftCuster.py`
+`redshiftCuster.py`
 	•	Create IAM role, Redshift cluster, and allow TCP connection from outside VPC
 	•	Uncomment cleanup_on_exit to delete resources
 
